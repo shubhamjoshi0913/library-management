@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management - Members</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Manage Members</h1>
+        <a href="dashboard.html">Back to Dashboard</a>
+    </header>
+    <main>
+        <form id="addMemberForm">
+            <h2>Add New Member</h2>
+            <input type="text" id="name" placeholder="Member Name" required />
+            <input type="email" id="email" placeholder="Member Email" required />
+            <select id="membershipType">
+                <option value="Standard">Standard</option>
+                <option value="Premium">Premium</option>
+            </select>
+            <button type="submit">Add Member</button>
+        </form>
+        <section id="memberList">
+            <h2>Member List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Membership Type</th>
+                    </tr>
+                </thead>
+                <tbody id="membersTableBody"></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overdue Returns Report</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+        <button id="logout">Logout</button>
+    </header>
+    <main>
+        <h2>Overdue Returns Report</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Member Name</th>
+                    <th>Book Title</th>
+                    <th>Due Date</th>
+                    <th>Days Overdue</th>
+                </tr>
+            </thead>
+            <tbody id="overdueReturnsTableBody">
+                <!-- Rows will be dynamically inserted using JavaScript -->
+            </tbody>
+        </table>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
